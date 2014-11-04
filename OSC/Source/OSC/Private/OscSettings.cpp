@@ -3,10 +3,10 @@
 
 UOscSettings::UOscSettings( const class FPostConstructInitializeProperties& PCIP )
  :  Super(PCIP),
-    ReceiveFrom("8000"),
+    ReceiveFrom("8338"),
     _sendSocket(FUdpSocketBuilder(TEXT("OscSender")).Build())
 {
-    SendTargets.Add(TEXT("127.0.0.1:8000"));
+    SendTargets.Add(TEXT("127.0.0.1:8338"));
 }
 
 void UOscSettings::UpdateSendAddresses()
